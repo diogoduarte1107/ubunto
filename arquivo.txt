@@ -1,0 +1,26 @@
+op=op
+caminho=caminho
+COMPIMIR="comprimir"
+COPIAR="copiar"
+
+
+echo digite o caminho do documento...
+read caminho
+
+echo deseja copiar, comprimir?
+read opcao
+
+
+if test "$op" = "comprimir"
+then
+tar -cvzf 000.tar.gz $local
+echo comprimindo...
+
+fi
+
+if test "op" = "copiar"
+then
+cp $caminho /Documentos/teste
+echo Copiando ...
+
+fi
